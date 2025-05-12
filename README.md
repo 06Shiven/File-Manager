@@ -1,4 +1,4 @@
-# 🗂️ BestSafety Services Form Manager
+# 🗂️ Form Manager
 
 A modern, dark-mode file manager and secure form organizer built with Python and `ttkbootstrap`.  
 Designed for efficient access, categorization, and protection of your company’s forms — including PDFs, Excel sheets, and more.
