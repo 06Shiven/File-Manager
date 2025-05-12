@@ -82,7 +82,7 @@ Form Manager App/
 
 If locked out:
 1. Click **"Forgot Password?"** in the unlock popup
-2. Enter the **master password**:  
+2. Enter the **master password**:  master123
 3. You’ll be allowed to set a new password.
 
 ---
