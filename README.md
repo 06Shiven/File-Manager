@@ -50,15 +50,6 @@ Designed for efficient access, categorization, and protection of your company’
 
 ---
 
-## 📦 File Structure
-Form Manager App/
-├── Form Manager.py # Main application script
-├── appicon.ico # Icon used for main app + dialogs
-└── File Manager.png # Screenshot for documentation
-
-
----
-
 ## 🚀 How to Use
 
 1. Launch the app (`Form Manager.py` or `.exe`)
