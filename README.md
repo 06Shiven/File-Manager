@@ -20,7 +20,7 @@ Designed for efficient access, categorization, and protection of your company’
 
 - 🔑 **Forgot Password Recovery**  
   Click **"Forgot Password?"** on the unlock dialog to reset using the master password:  
-  **`mrugeshjaiswal`**
+  **`master123`**
 
 - 🧠 **Encrypted Credentials**  
   User password is hashed using **SHA-256** and stored in `settings.json`.
