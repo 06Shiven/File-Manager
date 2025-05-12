@@ -1,47 +1,103 @@
-📁 Form Manager
-A modern, password-protected file organizer built with Python and ttkbootstrap.
-Easily manage, preview, and secure forms such as PDFs and Excel files — all in one place.
-~~~
+# 🗂️ BestSafety Services Form Manager
+
+A modern, dark-mode file manager and secure form organizer built with Python and `ttkbootstrap`.  
+Designed for efficient access, categorization, and protection of your company’s forms — including PDFs, Excel sheets, and more.
+
+---
+
+## 🖼️ Interface Preview
+
+![Form Manager GUI](File%20Manager.png)
+
+---
+
+## ✨ Features
+
+- 🔐 **Password Locking**  
+  Easily lock and unlock access to the app. When locked:
+  - Forms can't be added, opened, renamed, or deleted.
+  - All interactions are disabled until the correct password is entered.
+
+- 🔑 **Forgot Password Recovery**  
+  Click **"Forgot Password?"** on the unlock dialog to reset using the master password:  
+  **`mrugeshjaiswal`**
+
+- 🧠 **Encrypted Credentials**  
+  User password is hashed using **SHA-256** and stored in `settings.json`.
+
+- 📂 **Auto Categorization**  
+  All files are grouped into:
+  - PDFs
+  - Excel Sheets (`.xlsx`, `.xls`)
+  - Other Files
+
+- 🔍 **Search + Filter**  
+  Filter files by name and file type instantly via:
+  - A sidebar filter (All / PDF / Excel / Other)
+  - A search bar
+
+- 🖊️ **File Operations**  
+  Double-click to open, or use toolbar buttons to rename/delete files.
+
+- 🌙 **Modern Dark Theme**  
+  Built with [`ttkbootstrap`](https://github.com/israel-dryer/ttkbootstrap) using the `darkly` theme.
+
+- 🖼️ **Custom Icons in All Windows**  
+  `appicon.ico` is embedded into every window (main + all dialogs).
+
+- 🧷 **Portable `.exe`**  
+  Fully packaged single-file `.exe` for any Windows machine — no Python needed.
+
+---
+
+## 📦 File Structure
+Form Manager App/
+├── Form Manager.py # Main application script
+├── appicon.ico # Icon used for main app + dialogs
+└── File Manager.png # Screenshot for documentation
 
 
-~~~
-✨ Features
-🔐 Lock/unlock mode with encrypted password protection
+---
 
-🧠 “Forgot Password” recovery with master override
+## 🚀 How to Use
 
-✏️ Rename and delete files from within the app
+1. Launch the app (`Form Manager.py` or `.exe`)
+2. Click **"Add Form"** to select a file
+3. Double-click a file to open it in the default editor
+4. Use **Delete**, **Rename**, and **Lock 🔒** buttons as needed
+5. Default password: **`admin123`**
 
-📄 Automatically categorizes files (PDFs, Excel, Others)
+---
 
-🌙 Dark-themed UI using ttkbootstrap
+## 🔐 Changing the Password
 
-🖼️ Custom app icon support (even in dialog windows)
+1. Click **"🔑 Change Password"** in the sidebar
+2. Enter your current password
+3. Enter and confirm your new password
+4. It's saved in `settings.json` as a secure SHA-256 hash
 
-🔍 Search & filter with responsive layout
+---
 
-✅ Built into a single .exe for portable Windows use
-~~~
+## 🔓 Forgot Password?
 
+If locked out:
+1. Click **"Forgot Password?"** in the unlock popup
+2. Enter the **master password**:  
+3. You’ll be allowed to set a new password.
 
-~~~
-🔧 Tech Stack
-Python 3.13+
+---
 
-ttkbootstrap for modern UI
+## 🧰 Building the `.exe` (Optional)
 
-tkinter for dialogs
+> 🔹 Windows only — requires `pyinstaller`
 
-PyInstaller for .exe packaging
-~~~
+1. Open terminal in the `Form Manager App` folder  
+2. Run:
 
+```
+pyinstaller --noconfirm --onefile --windowed --icon=appicon.ico --add-data "appicon.ico;." "Form Manager.py"
+```
+This generates:
 
-~~~
-📦 How to Use
-Run the app (.exe or Form Manager.py)
-
-Add files using the “Add Form” button
-
-Lock or unlock using the 🔒 icon (default password: admin123)
-
-Change your password in the sidebar
+dist/
+└── Form Manager.exe
