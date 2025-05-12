@@ -10,7 +10,7 @@ import hashlib
 FORMS_FILE = 'forms.json'
 SETTINGS_FILE = 'settings.json'
 DEFAULT_PASSWORD = "admin123"
-MASTER_PASSWORD = "mrugeshjaiswal"
+MASTER_PASSWORD = "master123"
 
 
 # ---------------- Password Hashing ----------------
